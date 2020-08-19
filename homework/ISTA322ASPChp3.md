@@ -40,7 +40,7 @@ by action methods and Razor Pages.
 
 **9. Why should we validate user data? How do we validate user data?**  
 
-Without validating user data a user could input nonsense data making an application useless.  We validate user data usig the ModelState.IsValid property.  
+Without validating user data a user could input nonsense data making an application useless.  We validate user data on both the client side and the server side. 
 
 **10. What, specifically, is the ModelState.IsValid property?**  
 
@@ -48,7 +48,7 @@ The controller base class provides a property called ModelState that provides de
 
 **11. What does the asp-validation-summary do?**  
 
-It displays a list of validation errors when the view is rendered. The value for the asp-validation-summary attribute is a value from an enumeration called  
+It displays a list of validation errors when the view is rendered. The value for the asp-validation-summary attribute is a value from an enumeration called   
 ValidationSummary, which specifies what types of validation errors the summary will contain.
 
 **12. Static content consists of content such as images, script files, style files, etc. In an ASP.NET Core application, what is the name of the folder that cotains static content?**
