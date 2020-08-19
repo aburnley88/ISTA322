@@ -48,10 +48,13 @@ The controller base class provides a property called ModelState that provides de
 
 **11. What does the asp-validation-summary do?**  
 
-
+It displays a list of validation errors when the view is rendered. The value for the asp-validation-summary attribute is a value from an enumeration called  
+ValidationSummary, which specifies what types of validation errors the summary will contain.
 
 **12. Static content consists of content such as images, script files, style files, etc. In an ASP.NET Core application, what is the name of the folder that cotains static content?**
 
-
+The name of the folder that contains static content is wwwroot/js.
 
 **13. What is Bootstrap? Who developed Bootstrap? Is Bootstrap a proprietary package? If not, what is it?**
+
+Bootstrap is an open source CSS framework designed by Twitter. 
