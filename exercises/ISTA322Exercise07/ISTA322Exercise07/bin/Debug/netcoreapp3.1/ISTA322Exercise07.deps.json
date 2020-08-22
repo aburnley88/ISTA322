@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ISTA322Exercise07/1.0.0": {
+        "runtime": {
+          "ISTA322Exercise07.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ISTA322Exercise07/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

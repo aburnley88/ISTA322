@@ -1,0 +1,13 @@
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\bin\Debug\netcoreapp3.1\ISTA322Exercise07.exe
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\bin\Debug\netcoreapp3.1\ISTA322Exercise07.deps.json
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\bin\Debug\netcoreapp3.1\ISTA322Exercise07.runtimeconfig.json
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\bin\Debug\netcoreapp3.1\ISTA322Exercise07.runtimeconfig.dev.json
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\bin\Debug\netcoreapp3.1\ISTA322Exercise07.dll
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\bin\Debug\netcoreapp3.1\ISTA322Exercise07.pdb
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.csprojAssemblyReference.cache
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.AssemblyInfoInputs.cache
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.AssemblyInfo.cs
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.csproj.CoreCompileInputs.cache
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.dll
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.pdb
+C:\Users\wwstudent\Desktop\quatico06\ISTA322\Exercises\ISTA322Exercise07\ISTA322Exercise07\obj\Debug\netcoreapp3.1\ISTA322Exercise07.genruntimeconfig.cache
