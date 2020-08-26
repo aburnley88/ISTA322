@@ -104,7 +104,7 @@ namespace ISTA322Exercise08
                             case ">":
                                 max = guess - 1;
                                 chances--;
-                                guess = max / 2;
+                                guess = min + (max - min) / 2;
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances");
                                 break;
                             case "=":
@@ -114,7 +114,7 @@ namespace ISTA322Exercise08
                             case "<":
                                 min = guess + 1;
                                 chances--;
-                                guess = r.Next(min, max);
+                                guess = min + (max - min) / 2;
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances");
                                 break;
                         }
@@ -178,7 +178,7 @@ namespace ISTA322Exercise08
                             case ">":
                                 max = guess - 1;
                                 chances--;
-                                guess = max/2;
+                                guess = min + (max - min) / 2;
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances");
                                 break;
                             case "=":
@@ -188,7 +188,7 @@ namespace ISTA322Exercise08
                             case "<":
                                 min = guess + 1;
                                 chances--;
-                                guess = r.Next(min, max);
+                                guess = min + (max - min) / 2;
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances");
                                 break;
                         }
@@ -243,8 +243,8 @@ namespace ISTA322Exercise08
                             case ">":
                                 max = guess - 1;
                                 chances--;
-                                guess = max/2;
-                                Console.WriteLine($"\nMy guess is {guess} I have {chances} chances.");
+                                guess = min + (max - min) / 2;
+                                Console.WriteLine($"\nMy guess is {guess} I have {chances} chances. {min} -{max}");
                                 break;
                             case "=":
                                 chances = 0;
@@ -253,8 +253,8 @@ namespace ISTA322Exercise08
                             case "<":
                                 min = guess + 1;
                                 chances--;
-                                guess = r.Next(min, max);
-                                Console.WriteLine($"\nMy guess is {guess} I have {chances} chances.");
+                                guess = min + (max - min) / 2;
+                                Console.WriteLine($"\nMy guess is {guess} I have {chances} chances. {min}-{max}");
                                 break;
                         }
                     }
