@@ -30,7 +30,7 @@ namespace Drawing
 
         public void SetColor(Color color)
         {
-            if (this.shape != null)
+            if(this.shape!=null)
             {
                 SolidColorBrush brush = new SolidColorBrush(color);
                 this.shape.Fill = brush;
@@ -39,7 +39,7 @@ namespace Drawing
 
         public virtual void Draw(Canvas canvas)
         {
-            if (this.shape == null)
+            if(this.shape == null)
             {
                 throw new InvalidOperationException("Shape is null");
             }
@@ -50,5 +50,5 @@ namespace Drawing
             Canvas.SetLeft(this.shape, this.locX);
             canvas.Children.Add(this.shape);
         }
-    }
+    }    
 }

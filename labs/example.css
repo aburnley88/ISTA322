@@ -1,0 +1,33 @@
+	body{
+				border:2px black solid;
+				background-color: #9fc2a6;
+				padding: 16px;
+				margin: 48px;
+			}
+			h2 {
+				border: 2px #ed8787 dashed;
+				text-align: center;
+				font-variant: small-caps;
+				padding: 5px;
+			}
+			.mouseout{
+				border: outset 6px #FF0000;
+				color: #ff2345;
+				background-color: black;
+			}
+			.mouseover{
+				border: inset 6px #00ff00;
+				color: #129921;
+				background-color: #ff5234;
+				cursor: pointer;
+			}
+			h3 {
+				display: none;
+			}
+			#nodisplay {
+				color: #654321;
+				background-color: #fedcba;
+				padding: 12px;
+				width: 60px;
+
+			}

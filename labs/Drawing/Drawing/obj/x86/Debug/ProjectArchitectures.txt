@@ -1,1 +1,1 @@
-C:\Users\wwstudent\Desktop\quatico06\ISTA322\Labs\Drawing\Drawing\Drawing.csproj;x86
+C:\Users\wwstudent\Desktop\quatico06\VCSBS\Chapter 13\Drawing - Complete\Drawing\Drawing.csproj;x86

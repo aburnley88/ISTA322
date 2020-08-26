@@ -99,7 +99,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cirlce.cs" />
+    <Compile Include="Circle.cs" />
     <Compile Include="DrawingPad.xaml.cs">
       <DependentUpon>DrawingPad.xaml</DependentUpon>
     </Compile>

@@ -15915,11 +15915,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wwstudent\\Desktop\\quatico06\\ISTA322\\Labs\\Drawing\\Drawing\\Drawing.csproj",
+      "projectUniqueName": "C:\\Users\\wwstudent\\Desktop\\quatico06\\VCSBS\\Chapter 13\\Drawing - Complete\\Drawing\\Drawing.csproj",
       "projectName": "Drawing",
-      "projectPath": "C:\\Users\\wwstudent\\Desktop\\quatico06\\ISTA322\\Labs\\Drawing\\Drawing\\Drawing.csproj",
+      "projectPath": "C:\\Users\\wwstudent\\Desktop\\quatico06\\VCSBS\\Chapter 13\\Drawing - Complete\\Drawing\\Drawing.csproj",
       "packagesPath": "C:\\Users\\wwstudent\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wwstudent\\Desktop\\quatico06\\ISTA322\\Labs\\Drawing\\Drawing\\obj\\",
+      "outputPath": "C:\\Users\\wwstudent\\Desktop\\quatico06\\VCSBS\\Chapter 13\\Drawing - Complete\\Drawing\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -12,13 +12,13 @@ namespace Drawing
 {
     class Square : DrawingShape, IDraw, IColor
     {
-        public Square(int sideLength) : base(sideLength)
-        {
+        public Square(int sideLength):base(sideLength)
+        {            
         }
 
         public override void Draw(Canvas canvas)
         {
-            if (this.shape != null)
+            if(this.shape!=null)
             {
                 canvas.Children.Remove(this.shape);
             }

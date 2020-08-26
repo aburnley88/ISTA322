@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h5PiCipx5fZEPSTHt8jQgzJsRCJOdR+kfRvbkHS5/FW9qOHxdhLMQX4ZnCqYvjfAnUEiUQNKOVq7R9n2mSBgfw==",
+  "dgSpecHash": "QiCHaORxZYKEw/dEunGjC35YaHlpEk9QhMFrS/Ez3HEgnQ5pMAQGCITqTQvxQ2UuTWwzHFvVxsd/Pqb6IHmbtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wwstudent\\Desktop\\quatico06\\ISTA322\\Labs\\Drawing\\Drawing\\Drawing.csproj",
+  "projectFilePath": "C:\\Users\\wwstudent\\Desktop\\quatico06\\VCSBS\\Chapter 13\\Drawing - Complete\\Drawing\\Drawing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wwstudent\\.nuget\\packages\\microsoft.applicationinsights\\1.0.0\\microsoft.applicationinsights.1.0.0.nupkg.sha512",
     "C:\\Users\\wwstudent\\.nuget\\packages\\microsoft.applicationinsights.persistencechannel\\1.0.0\\microsoft.applicationinsights.persistencechannel.1.0.0.nupkg.sha512",
