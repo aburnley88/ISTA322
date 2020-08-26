@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA322Exercise08", "ISTA322Exercise08\ISTA322Exercise08.csproj", "{0905CB9D-9E74-4869-BE06-2CD78072F4A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0905CB9D-9E74-4869-BE06-2CD78072F4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0905CB9D-9E74-4869-BE06-2CD78072F4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0905CB9D-9E74-4869-BE06-2CD78072F4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0905CB9D-9E74-4869-BE06-2CD78072F4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84FDF6ED-F622-4034-8C0C-C4E785DCE331}
+	EndGlobalSection
+EndGlobal
