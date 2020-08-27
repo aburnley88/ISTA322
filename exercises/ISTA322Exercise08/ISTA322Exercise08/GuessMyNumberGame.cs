@@ -15,7 +15,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine("Welcome to Arnold's 'Guess My Number' Game!\n");
+                    Console.WriteLine("\nWelcome to Arnold's 'Guess My Number' Game!\n");
                     Console.WriteLine("There are 2 versions of 'Guess My Number'.\n\nIn version 1 the computer guesses your number.\n\nVersion 2 you guess the computers number.\n");
                     Console.WriteLine("Please enter number 1 to play version 1 or 2 for version 2.");
                     string userResponse = Console.ReadLine();
@@ -149,7 +149,10 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine($"Please enter '>' for too high, '<' for too low, and '=' for just right!");
+                    if (chances == 0)
+                        PlayAgain();
+
+                    Console.WriteLine($"\nPlease enter '>' for too high, '<' for too low, and '=' for just right!");
                     string userResponse = Console.ReadLine();
                     Random r = new Random();
                                        
@@ -170,7 +173,7 @@ namespace ISTA322Exercise08
                                 break;
                             case "=":
                                 chances = 0;
-                                Console.WriteLine("I figured it out!");
+                                Console.WriteLine("\nI figured it out!");
                                 PlayAgain();
                                 break;
                             case "<":
@@ -201,7 +204,10 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine($"Please enter '>' for too high, '<' for too low, and '=' for just right!");
+                    if (chances == 0)
+                        PlayAgain();
+
+                    Console.WriteLine($"\nPlease enter '>' for too high, '<' for too low, and '=' for just right!");
                     string userResponse = Console.ReadLine();
                     Random r = new Random();
 
@@ -221,7 +227,7 @@ namespace ISTA322Exercise08
                                 break;
                             case "=":
                                 chances = 0;
-                                Console.WriteLine("I figured it out!");
+                                Console.WriteLine("\nI figured it out!");
                                 PlayAgain();
                                 break;
                             case "<":
@@ -251,7 +257,9 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine($"Please enter '>' for too high, '<' for too low, and '=' for just right!");
+                   
+
+                    Console.WriteLine($"\nPlease enter '>' for too high, '<' for too low, and '=' for just right!");
                     string userResponse = Console.ReadLine();                   
 
                     if (userResponse != ">" && userResponse != "<" && userResponse != "=")
@@ -270,7 +278,7 @@ namespace ISTA322Exercise08
                                 break;
                             case "=":
                                 chances = 0;
-                                Console.WriteLine("I figured it out!");
+                                Console.WriteLine("\nI figured it out!");
                                 PlayAgain();
                                 break;
                             case "<":
@@ -348,6 +356,9 @@ namespace ISTA322Exercise08
             {
                 try
                 {
+                    if (chances == 0)
+                        PlayAgain();
+
                     Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
@@ -394,6 +405,10 @@ namespace ISTA322Exercise08
             {
                 try
                 {
+                    if (chances == 0)
+                        PlayAgain();
+
+                        
                     Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
@@ -441,6 +456,9 @@ namespace ISTA322Exercise08
             {
                 try
                 {
+                    if (chances == 0)
+                        PlayAgain();
+
                     Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
@@ -482,6 +500,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
+                    
                     Console.WriteLine("Would you like to play again?" + "\nenter 0 for yes and 1 for no");
                     string userResponse = Console.ReadLine();
                     if (userResponse != "0" && userResponse != "1")
