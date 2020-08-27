@@ -76,7 +76,7 @@ namespace ISTA322Exercise08
                                 break;
                             case "3":
                                 temp = false;
-                                VersionOneLvlOneFirstGuess();
+                                VersionOneLvl3FirstGuess();
                                 break;
                         }
                     }
