@@ -152,6 +152,7 @@ namespace ISTA322Exercise08
                     Console.WriteLine($"Please enter '>' for too high, '<' for too low, and '=' for just right!");
                     string userResponse = Console.ReadLine();
                     Random r = new Random();
+                                       
 
                     if (userResponse != ">" && userResponse != "<" && userResponse != "=")
                     {

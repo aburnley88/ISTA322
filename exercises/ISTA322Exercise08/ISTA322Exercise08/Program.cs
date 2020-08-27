@@ -6,6 +6,9 @@ namespace ISTA322Exercise08
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
             GuessMyNumberGame game = new GuessMyNumberGame();
             game.Welcome();
         }
