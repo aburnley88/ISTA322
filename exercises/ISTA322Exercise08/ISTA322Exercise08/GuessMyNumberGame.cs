@@ -170,6 +170,7 @@ namespace ISTA322Exercise08
                             case "=":
                                 chances = 0;
                                 Console.WriteLine("I figured it out!");
+                                PlayAgain();
                                 break;
                             case "<":
                                 min = guess + 1;
@@ -186,7 +187,6 @@ namespace ISTA322Exercise08
                     Console.WriteLine(fEx.Message + "\n");
                 }
             } while (chances > 0);
-
         }
 
         public void VersionOneLvl2Guess()
@@ -221,6 +221,7 @@ namespace ISTA322Exercise08
                             case "=":
                                 chances = 0;
                                 Console.WriteLine("I figured it out!");
+                                PlayAgain();
                                 break;
                             case "<":
                                 min = guess + 1;
@@ -269,6 +270,7 @@ namespace ISTA322Exercise08
                             case "=":
                                 chances = 0;
                                 Console.WriteLine("I figured it out!");
+                                PlayAgain();
                                 break;
                             case "<":
                                 min = guess + 1;
@@ -345,7 +347,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine($"You have {chances} to guess my number.");
+                    Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
                     int userResponse = Int32.Parse(userGuess);
@@ -367,6 +369,7 @@ namespace ISTA322Exercise08
                     {
                         Console.WriteLine("You got it!");
                         chances = 0;
+                        PlayAgain();
                     }
 
                 }
@@ -390,7 +393,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine($"You have {chances} to guess my number.");
+                    Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
                     int userResponse = Int32.Parse(userGuess);
@@ -412,6 +415,7 @@ namespace ISTA322Exercise08
                     {
                         Console.WriteLine("You got it!");
                         chances = 0;
+                        PlayAgain();
                     }
 
                 }
@@ -436,7 +440,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    Console.WriteLine($"You have {chances} to guess my number.");
+                    Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
                     int userResponse = Int32.Parse(userGuess);
@@ -458,6 +462,7 @@ namespace ISTA322Exercise08
                     {
                         Console.WriteLine("You got it!");
                         chances = 0;
+                        PlayAgain();
                     }
 
                 }
@@ -468,6 +473,32 @@ namespace ISTA322Exercise08
                 }
 
             } while (chances > 0);
+        }
+        public void PlayAgain()
+        {
+            bool temp = true;
+            do
+            {
+                try
+                {
+                    Console.WriteLine("Would you like to play again?" + "\nenter 0 for yes and 1 for no");
+                    string userResponse = Console.ReadLine();
+                    if (userResponse != "0" && userResponse != "1")
+                    {
+                        throw new FormatException();
+                    }
+                    else
+                        temp = false;
+                        Welcome();
+                }
+                catch (FormatException fex)
+                {
+
+                    Console.WriteLine(fex.Message + "\n");
+                }
+
+            } while (temp);
+
         }
    
     }
