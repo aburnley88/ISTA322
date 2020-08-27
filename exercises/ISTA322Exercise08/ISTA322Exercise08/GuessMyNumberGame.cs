@@ -114,13 +114,13 @@ namespace ISTA322Exercise08
             int chances = 7;
             int guess = 0;
 
-            Console.WriteLine("Welcome to level 1.");
+            Console.WriteLine("Welcome to level 2.");
             Console.WriteLine($"\nPlease mentally a number between {min} and {max}.");
 
-            if (chances == 4)
+            if (chances == 7)
                 guess = max / 2;
             Console.WriteLine($"\nMy guess is {guess} I have {chances - 1} more chances");
-            VersionOneLvlOneGuess();
+            VersionOneLvl2Guess();
         }
 
         private void VersionOneLvl3FirstGuess()
