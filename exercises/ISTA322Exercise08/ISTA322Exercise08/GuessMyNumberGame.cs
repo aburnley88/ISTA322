@@ -503,13 +503,28 @@ namespace ISTA322Exercise08
                     
                     Console.WriteLine("Would you like to play again?" + "\nenter 0 for yes and 1 for no");
                     string userResponse = Console.ReadLine();
-                    if (userResponse != "0" && userResponse != "1")
+                    int UserResponse = Int32.Parse(userResponse);
+                    if (UserResponse != 0 && UserResponse != 1)
                     {
                         throw new FormatException();
                     }
                     else
-                        temp = false;
-                        Welcome();
+                    {
+                        switch (UserResponse)
+                        {
+                            case 0:
+                                Welcome();
+                                temp = false;
+                                break;
+                            case 1:
+                                Thanks();
+                                temp = false;
+                                break;
+                        }
+                    
+                    }
+                    
+
                 }
                 catch (FormatException fex)
                 {
@@ -519,6 +534,10 @@ namespace ISTA322Exercise08
 
             } while (temp);
 
+        }
+        public void Thanks()
+        {
+            Console.WriteLine("Thank you for playing");
         }
    
     }
