@@ -149,8 +149,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    if (chances == 0)
-                        PlayAgain();
+                    
 
                     Console.WriteLine($"\nPlease enter '>' for too high, '<' for too low, and '=' for just right!");
                     string userResponse = Console.ReadLine();
@@ -160,6 +159,11 @@ namespace ISTA322Exercise08
                     if (userResponse != ">" && userResponse != "<" && userResponse != "=")
                     {
                         throw new FormatException();
+                    }
+                    if (chances == 0)
+                    {
+                        PlayAgain();
+                        chances = -1;
                     }
                     else
                     {
@@ -172,7 +176,7 @@ namespace ISTA322Exercise08
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances");
                                 break;
                             case "=":
-                                chances = 0;
+                                chances = -1;
                                 Console.WriteLine("\nI figured it out!");
                                 PlayAgain();
                                 break;
@@ -190,7 +194,7 @@ namespace ISTA322Exercise08
                 {
                     Console.WriteLine(fEx.Message + "\n");
                 }
-            } while (chances > 0);
+            } while (chances >= 0);
         }
 
         public void VersionOneLvl2Guess()
@@ -204,8 +208,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    if (chances == 0)
-                        PlayAgain();
+                    
 
                     Console.WriteLine($"\nPlease enter '>' for too high, '<' for too low, and '=' for just right!");
                     string userResponse = Console.ReadLine();
@@ -214,6 +217,11 @@ namespace ISTA322Exercise08
                     if (userResponse != ">" && userResponse != "<" && userResponse != "=")
                     {
                         throw new FormatException();
+                    }
+                    if (chances == 0)
+                    {
+                        PlayAgain();
+                        chances = -1;
                     }
                     else
                     {
@@ -226,7 +234,7 @@ namespace ISTA322Exercise08
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances. {min} -{max}");
                                 break;
                             case "=":
-                                chances = 0;
+                                chances = -1;
                                 Console.WriteLine("\nI figured it out!");
                                 PlayAgain();
                                 break;
@@ -243,7 +251,7 @@ namespace ISTA322Exercise08
                 {
                     Console.WriteLine(fEx.Message + "\n");
                 }
-            } while (chances > 0);
+            } while (chances >= 0);
         }
 
         private void VersionOneLvl3Guess()
@@ -266,6 +274,11 @@ namespace ISTA322Exercise08
                     {
                         throw new FormatException();
                     }
+                    if (chances == 0)
+                    {
+                        PlayAgain();
+                        chances = -1;
+                    }
                     else
                     {
                         switch (userResponse)
@@ -277,7 +290,7 @@ namespace ISTA322Exercise08
                                 Console.WriteLine($"\nMy guess is {guess} I have {chances} chances");
                                 break;
                             case "=":
-                                chances = 0;
+                                chances = -1;
                                 Console.WriteLine("\nI figured it out!");
                                 PlayAgain();
                                 break;
@@ -295,7 +308,7 @@ namespace ISTA322Exercise08
                 {
                     Console.WriteLine(fEx.Message + "\n");
                 }
-            } while (chances > 0);
+            } while (chances >= 0);
         }
       
         public void Version2()
@@ -356,8 +369,7 @@ namespace ISTA322Exercise08
             {
                 try
                 {
-                    if (chances == 0)
-                        PlayAgain();
+                    
 
                     Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
@@ -380,8 +392,13 @@ namespace ISTA322Exercise08
                     if (userResponse == num)
                     {
                         Console.WriteLine("You got it!");
-                        chances = 0;
+                        chances = -1;
                         PlayAgain();
+                    }
+                    if (chances == 0)
+                    {
+                        PlayAgain();
+                        chances = -1;
                     }
 
                 }
@@ -391,7 +408,7 @@ namespace ISTA322Exercise08
                     Console.WriteLine(fex.Message + "\n");
                 }
 
-            } while (chances > 0);
+            } while (chances >= 0);
         }
         private void VersionTwoLvl2Guess()
         {
@@ -430,8 +447,13 @@ namespace ISTA322Exercise08
                     if (userResponse == num)
                     {
                         Console.WriteLine("You got it!");
-                        chances = 0;
+                        chances = -1;
                         PlayAgain();
+                    }
+                    if (chances == 0)
+                    {
+                        PlayAgain();
+                        chances = -1;
                     }
 
                 }
@@ -441,7 +463,7 @@ namespace ISTA322Exercise08
                     Console.WriteLine(fex.Message + "\n");
                 }
 
-            } while (chances > 0);
+            } while (chances >= 0);
         }
 
         private void VersionTwoLvl3FirstGuess()
@@ -452,17 +474,20 @@ namespace ISTA322Exercise08
             int chances = 10;
             int max = 1000;
             int num = r.Next(min, max);
+            
+            
+         
             do
             {
                 try
                 {
-                    if (chances == 0)
-                        PlayAgain();
-
+                  
+                       
                     Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
                     int userResponse = Int32.Parse(userGuess);
+                  
                     if (userResponse < min && userResponse > max)
                     {
                         throw new FormatException();
@@ -480,9 +505,15 @@ namespace ISTA322Exercise08
                     if (userResponse == num)
                     {
                         Console.WriteLine("You got it!");
-                        chances = 0;
+                        chances = -1;
                         PlayAgain();
                     }
+                    if (chances == 0)
+                    {
+                        PlayAgain();
+                        chances = -1;
+                    }
+
 
                 }
                 catch (FormatException fex)
@@ -491,7 +522,7 @@ namespace ISTA322Exercise08
                     Console.WriteLine(fex.Message + "\n");
                 }
 
-            } while (chances > 0);
+            } while ( chances >= 0 ); 
         }
         public void PlayAgain()
         {
