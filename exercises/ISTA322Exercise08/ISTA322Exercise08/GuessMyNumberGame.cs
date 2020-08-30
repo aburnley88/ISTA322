@@ -370,12 +370,11 @@ namespace ISTA322Exercise08
                 try
                 {
                     
-
                     Console.WriteLine($"You have {chances} chances to guess my number.");
                     Console.WriteLine($"Please enter a number in this range {min} - {max}");
                     string userGuess = Console.ReadLine();
                     int userResponse = Int32.Parse(userGuess);
-                    if (userResponse < min && userResponse > max)
+                    if (userResponse < min || userResponse > max)
                     {
                         throw new FormatException();
                     }
@@ -488,7 +487,7 @@ namespace ISTA322Exercise08
                     string userGuess = Console.ReadLine();
                     int userResponse = Int32.Parse(userGuess);
                   
-                    if (userResponse < min && userResponse > max)
+                    if (userResponse < min || userResponse > max)
                     {
                         throw new FormatException();
                     }
